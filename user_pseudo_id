@@ -1,0 +1,3 @@
+SELECT DISTINCT user_pseudo_id
+FROM `dataras-test.L0_dataras_GA4.events_*`
+WHERE _table_suffix between "20220701" and "20220831"
