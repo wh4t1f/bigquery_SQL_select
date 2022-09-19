@@ -1,0 +1,10 @@
+SELECT
+ 	COUNT (event_name),
+ 	 device.category
+FROM
+ 	`test.L0_GA4.events_*`
+WHERE
+  	event_name = "page_view"
+  	AND _table_suffix BETWEEN "20220701" and "20220831"
+GROUP BY
+  	device.category
